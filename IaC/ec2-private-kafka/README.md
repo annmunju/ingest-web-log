@@ -1,4 +1,4 @@
-# EC2 Private EC2 Infrastructure as Code (IaC)
+# Private EC2 Infrastructure as Code (IaC)
 
 이 폴더는 사용자가 생성한 AMI를 이용하여 프라이빗 서브넷 내에서 EC2 인스턴스를 생성하기 위한 인프라스트럭처 코드(IaC)를 포함하고 있습니다. Terraform을 사용하여 AWS 리소스를 프로비저닝합니다.
 

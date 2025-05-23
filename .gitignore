@@ -1,4 +1,6 @@
 secretes/
+*.log
+output/
 
 # Created by https://www.toptal.com/developers/gitignore/api/terraform,python,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=terraform,python,macos

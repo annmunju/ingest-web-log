@@ -31,7 +31,7 @@ resource "aws_lambda_function" "kafka_producer" {
 
   environment {
     variables = {
-      BOOTSTRAP_SERVERS = ":9092"  # ex) <ServerIP>:9092
+      BOOTSTRAP_SERVERS = "13.124.112.3:9092"  # ex) <ServerIP>:9092
       KAFKA_TOPIC       = "clickstream"
     }
   }

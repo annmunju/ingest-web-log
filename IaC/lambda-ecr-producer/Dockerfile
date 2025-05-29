@@ -1,4 +1,4 @@
-# Dockerfile (운영용)
+# Dockerfile
 FROM python:3.9-slim
 
 # 1) 시스템 패키지

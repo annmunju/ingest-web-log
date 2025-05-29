@@ -39,6 +39,7 @@ resource "aws_instance" "kafka" {
   ami                    = var.ami_id # 변수로 전달받은 AMI ID 사용
   instance_type          = var.instance_type
   subnet_id              = var.subnet_ids[0]
+  private_ip             = "10.0.1.44"
   vpc_security_group_ids = [aws_security_group.kafka_sg.id]
   key_name               = var.key_name
 

@@ -143,6 +143,13 @@ resource "aws_instance" "kafka_setup" {
     sudo systemctl daemon-reload
     sudo systemctl enable zookeeper.service kafka.service
     sudo systemctl start zookeeper.service kafka.service
+
+    /opt/confluent/bin/kafka-topics \
+      --create \
+      --topic clickstream \
+      --bootstrap-server 0.0.0.0:9092 \
+      --partitions 1 \
+      --replication-factor 1
     EOF
 
   tags = {
